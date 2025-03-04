@@ -1,6 +1,4 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Mission_6.Models;
 
 namespace Mission_6.Controllers
 {
@@ -18,15 +16,14 @@ namespace Mission_6.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult GetToKnowJoel()
         {
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult Privacy()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();
         }
     }
 }
